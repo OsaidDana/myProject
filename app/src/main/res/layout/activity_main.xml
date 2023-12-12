@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginActivity"
+    android:background="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/amarorange" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="Email"
+        android:textColor="@color/colorDarkOrange"
+        android:background="@color/colorBlack"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@android:color/holo_orange_light" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/holo_orange_light" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/colorBlack"
+        android:text="Login"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="New User? Register Here"
+        android:textColor="@color/colorBlack" />
+
+
+</RelativeLayout>
